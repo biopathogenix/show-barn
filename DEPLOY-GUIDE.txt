@@ -1,0 +1,102 @@
+# ═══════════════════════════════════════════════════════
+#  THE SHOW BARN — COMPLETE DEPLOYMENT GUIDE
+#  GitHub Pages + Custom Domain + Contact Form — Step by Step
+# ═══════════════════════════════════════════════════════
+
+MATTERPORT (Home + Weddings pages):   https://my.matterport.com/show/?m=mweATdD8G1L
+MATTERPORT (The Space page):          https://my.matterport.com/show/?m=qQ4EpXaxjGH
+CONTACT EMAIL (To):                   booking@altusgp.com
+CONTACT EMAIL (Bcc):                  rajeswarigopu.eee@gmail.com
+PRIMARY DOMAIN:                       https://bio.biopathogenix.com/
+SOURCE CONTENT PULLED FROM:           https://www.theshowbarn.com (live Squarespace site)
+
+NOTE: All photos currently hotlink directly to Squarespace's CDN
+(images.squarespace-cdn.com), since that's where the real Show Barn photos
+already live. This works fine and costs nothing, but it depends on the
+Squarespace site staying live. If you ever cancel Squarespace, download
+these images first and swap the URLs for local /images/... paths.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 — UPLOAD TO GITHUB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Create a new PUBLIC repo, e.g. github.com/biopathogenix/showbarn
+2. Upload all files in this folder (do NOT put them in a subfolder):
+   - index.html
+   - weddings.html
+   - accommodation.html
+   - the-space.html
+   - contact.html
+   - style.css
+   - main.js
+3. Commit changes.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2 — ENABLE GITHUB PAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Repo → Settings → Pages
+2. Source: "Deploy from a branch" → Branch: main, folder: / (root)
+3. Save. Wait ~2 minutes.
+4. Your site is live at https://biopathogenix.github.io/showbarn/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3 — CONNECT YOUR DOMAIN (bio.biopathogenix.com)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Part A — GitHub:
+1. Repo → Settings → Pages → Custom domain → type your domain → Save
+   (GitHub will add a CNAME file automatically)
+
+Part B — Your DNS provider (wherever the domain is registered):
+   Type    Host    Value                          TTL
+   ────    ────    ─────                          ────
+   A       @       185.199.108.153                Auto
+   A       @       185.199.109.153                Auto
+   A       @       185.199.110.153                Auto
+   A       @       185.199.111.153                Auto
+   CNAME   www     biopathogenix.github.io.        Auto
+
+Part C — Wait 30 min–24 hrs, then check Settings → Pages for the
+"Your site is live at https://..." confirmation + free SSL.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 4 — SET UP THE CONTACT FORM (EmailJS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The form on contact.html is wired for EmailJS (same tool you've used
+before for the BioPathogenix survey). It is NOT active yet — you need to
+plug in your own keys so submissions actually send.
+
+1. Go to https://www.emailjs.com and sign up (free tier: 200 emails/mo).
+2. Add an Email Service (Gmail/Outlook) connected to booking@altusgp.com
+   — this is the inbox that will actually send the emails.
+3. Create a new Email Template with this content:
+      To Email:    booking@altusgp.com
+      Bcc:         rajeswarigopu.eee@gmail.com
+      Reply To:    {{from_email}}
+      Subject:     {{subject}}
+      Body:        include {{from_name}}, {{from_email}}, {{guests}},
+                    {{message}}
+4. Copy your Public Key (Account → General), Service ID, and Template ID.
+5. Open main.js and replace these 3 lines near the top:
+      var EMAILJS_PUBLIC_KEY  = 'YOUR_EMAILJS_PUBLIC_KEY';
+      var EMAILJS_SERVICE_ID  = 'YOUR_EMAILJS_SERVICE_ID';
+      var EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
+6. Re-upload main.js to GitHub. Test the form on the live site.
+
+WHY EmailJS AND NOT WEB3FORMS?
+Web3Forms only supports CC/BCC on their paid Pro plan. EmailJS lets you
+set a Bcc address directly in the template dashboard on the free plan,
+so booking@altusgp.com gets every inquiry and you get a silent copy at
+rajeswarigopu.eee@gmail.com without either party seeing the other's
+address in the email header.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+QUICK REFERENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Live source site:     https://www.theshowbarn.com
+3D Tour (Home):        https://my.matterport.com/show/?m=mweATdD8G1L
+3D Tour (The Space):   https://my.matterport.com/show/?m=qQ4EpXaxjGH
+Cabin booking:         https://bourboncountrycabins.lodgify.com/
+Contact form → To:     booking@altusgp.com
+Contact form → Bcc:    rajeswarigopu.eee@gmail.com
+Facebook:              https://www.facebook.com/theshowbarnatdaynabrook/
+Instagram:             https://www.instagram.com/theshowbarnky/
+The Knot:               https://www.theknot.com/marketplace/the-show-barn-at-daynabrook-farms-harrodsburg-ky-2036414
