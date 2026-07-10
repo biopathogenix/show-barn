@@ -810,6 +810,8 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   width: min(1100px, 100%);
   margin: 0 auto;
   border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  box-shadow: 0 30px 70px rgba(0,0,0,.35);
 }
 
 .showbarn-page .tour-card img{
@@ -832,6 +834,7 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   backdrop-filter: blur(6px);
   display: grid;
   place-items: center;
+  pointer-events: none;
 }
 
 .showbarn-page .tour-play span{
@@ -844,11 +847,11 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 }
 
 .showbarn-page .tour-caption{
-  position: absolute;
-  left: 2rem;
-  bottom: 1.5rem;
-  color: #f5f1e6;
+  text-align: center;
+  margin: 1.4rem 0 0;
+  color: #c8ba91;
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
   font-size: 1.25rem;
   letter-spacing: .02em;
 }
