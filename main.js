@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
    4. Replace the 3 placeholder values below with your own IDs/keys
    =========================================================== */
 (function () {
-  var EMAILJS_PUBLIC_KEY  = 'YOUR_EMAILJS_PUBLIC_KEY';
-  var EMAILJS_SERVICE_ID  = 'YOUR_EMAILJS_SERVICE_ID';
-  var EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
+  var EMAILJS_PUBLIC_KEY  = 'z_n-SG1VqOcjCGhvG';
+  var EMAILJS_SERVICE_ID  = 'service_yp81if6';
+  var EMAILJS_TEMPLATE_ID = 'template_wh10fmb';
 
   if (window.emailjs && EMAILJS_PUBLIC_KEY.indexOf('YOUR_') !== 0) {
     emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
