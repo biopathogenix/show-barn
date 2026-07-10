@@ -941,6 +941,19 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   margin-bottom: 1.4rem;
 }
 
+.showbarn-page .cabin-card-body h3{
+  color: #263426;
+}
+
+.showbarn-page .cabin-card-body p.desc,
+.showbarn-page .cabin-card-body li{
+  color: #5a594f;
+}
+
+.showbarn-page .cabin-card-body li::before{
+  color: var(--tan-dark);
+}
+
 .showbarn-page .gallery-band{
   background: #475544;
   padding: 3.5rem 0 4.2rem;
