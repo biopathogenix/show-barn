@@ -557,24 +557,11 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .nav-logo-home{
   font-family: 'Cormorant Garamond', serif;
-  letter-spacing: .16em;
-  align-items: flex-start;
-}
-
-.showbarn-page .nav-logo-home b{
-  font-size: 2rem;
+  font-style: italic;
   font-weight: 500;
-  line-height: .9;
-}
-
-.showbarn-page .nav-logo-home .nav-logo-eyebrow{
-  font-size: .72rem;
-  letter-spacing: .28em;
-}
-
-.showbarn-page .nav-logo-home span{
-  letter-spacing: .22em;
-  font-size: .55rem;
+  font-size: 1.5rem;
+  letter-spacing: .01em;
+  color: var(--text);
 }
 
 .showbarn-page .showbarn-links{
