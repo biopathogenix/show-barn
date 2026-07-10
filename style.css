@@ -138,7 +138,8 @@ header.site-nav{
 
 @media(max-width:960px){
   .nav-links{
-    position:fixed; inset:64px 0 0 0; background:var(--forest);
+    position:fixed; top:64px; left:0; right:0; height:calc(100vh - 64px);
+    background:var(--forest); overflow-y:auto;
     flex-direction:column; padding:2rem; gap:1.4rem;
     transform:translateY(-110%); transition:transform .3s ease; z-index:150;
   }
