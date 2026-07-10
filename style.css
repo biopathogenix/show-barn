@@ -676,8 +676,8 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .hero-copy h1{
   font-size: clamp(2.9rem, 4.6vw, 5.2rem);
-  line-height: .95;
-  max-width: 10ch;
+  line-height: 1.02;
+  max-width: 18ch;
   margin: 0 0 1rem;
 }
 
@@ -738,8 +738,8 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .intro-copy h2{
   font-size: clamp(2.5rem, 4vw, 4.8rem);
-  line-height: .95;
-  max-width: 10ch;
+  line-height: 1.02;
+  max-width: 18ch;
   margin: 0 0 1.5rem;
 }
 
@@ -875,9 +875,9 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .feature-cream-copy h2{
   font-size: clamp(2.3rem, 3.8vw, 4.2rem);
-  line-height: .97;
+  line-height: 1.02;
   margin: 0 0 1.2rem;
-  max-width: 11ch;
+  max-width: 16ch;
 }
 
 .showbarn-page .feature-cream-copy p{
