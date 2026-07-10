@@ -7,7 +7,6 @@ MATTERPORT (Home + Weddings pages):   https://my.matterport.com/show/?m=mweATdD8
 MATTERPORT (The Space page):          https://my.matterport.com/show/?m=qQ4EpXaxjGH
 CONTACT EMAIL (To):                   booking@altusgp.com
 CONTACT EMAIL (Bcc):                  rajeswarigopu.eee@gmail.com
-PRIMARY DOMAIN:                       https://bio.biopathogenix.com/
 SOURCE CONTENT PULLED FROM:           https://www.theshowbarn.com (live Squarespace site)
 
 NOTE: All photos currently hotlink directly to Squarespace's CDN
@@ -39,7 +38,7 @@ STEP 2 — ENABLE GITHUB PAGES
 4. Your site is live at https://biopathogenix.github.io/showbarn/
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STEP 3 — CONNECT YOUR DOMAIN (bio.biopathogenix.com)
+STEP 3 — CONNECT A CUSTOM DOMAIN (optional, not currently set up)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Part A — GitHub:
 1. Repo → Settings → Pages → Custom domain → type your domain → Save
@@ -60,9 +59,8 @@ Part C — Wait 30 min–24 hrs, then check Settings → Pages for the
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 STEP 4 — SET UP THE CONTACT FORM (EmailJS)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-The form on contact.html is wired for EmailJS (same tool you've used
-before for the BioPathogenix survey). It is NOT active yet — you need to
-plug in your own keys so submissions actually send.
+The form on contact.html is wired for EmailJS. Plug in your own keys so
+submissions actually send.
 
 1. Go to https://www.emailjs.com and sign up (free tier: 200 emails/mo).
 2. Add an Email Service (Gmail/Outlook) connected to booking@altusgp.com
