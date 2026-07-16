@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Parisienne&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23465244'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' font-style='italic' fill='%23f5f1e6' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body class="showbarn-page">
 <div class="page-grid-lines" aria-hidden="true"></div>
@@ -39,18 +40,19 @@
 <main>
   <section class="hero-shell">
     <div class="hero-frame">
-      <img class="hero-image" src="../assets/space-clean/walkaway.png" alt="A couple walking toward The Show Barn at sunset">
+      <img class="hero-image" src="../assets/space/The space page/hero.png" alt="Bride and groom embracing in front of The Show Barn at golden hour">
       <div class="hero-overlay">
         <div class="hero-copy">
-          <p class="eyebrow">Explore The Show Barn</p>
-          <h1>Unforgettable memories are created in moments shared with <em>those we love</em></h1>
+          <h1>Unforgettable memories are created in moments shared <em>with those we love</em>.</h1>
           <p class="hero-text">
-            Step inside The Show Barn and explore a space designed for celebration, connection,
-            and beautiful Bluegrass views from every angle.
+            At The Show Barn Wedding and Event Venue, every celebration feels personal and close.
+          </p>
+          <p class="hero-text">
+            Here, the backdrop of Kentucky's Bluegrass hills and the comfort of a refined space
+            create an atmosphere that's as inviting as it is breathtaking.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-tan" href="#tour">Take the Tour</a>
-            <a class="btn btn-outline-white" href="#gallery">View the Gallery</a>
+            <a class="btn btn-tan" href="#tour">Take the Tour &rarr;</a>
           </div>
         </div>
         <a class="knot-badge" href="https://www.theknot.com/" target="_blank" rel="noreferrer">
@@ -61,22 +63,12 @@
     </div>
   </section>
 
-  <section class="intro-band">
-    <div class="section-shell">
-      <p class="tour-intro" style="max-width:720px;">
-        At The Show Barn, every celebration feels personal and close. The venue blends the comfort
-        of a refined event space with the warmth of the Kentucky countryside, creating an atmosphere
-        that feels both elegant and welcoming.
-      </p>
-    </div>
-  </section>
-
   <section class="tour-band section-dark" id="tour">
     <div class="section-shell">
-      <p class="section-kicker">Interactive 3D Tour</p>
-      <p class="tour-intro">
-        Step inside and explore the venue from anywhere. Move through the hall, see the details,
-        and get a feel for the space before you arrive.
+      <p class="space-tour-quote">
+        Step inside and explore our wedding and event venue from anywhere! This interactive 3D tour
+        lets you walk through the space at your own pace &mdash; just click to move around, zoom in to
+        see details, and switch floors or rooms with the menu.
       </p>
       <div class="tour-card">
         <div class="tour-embed">
@@ -84,30 +76,101 @@
         </div>
       </div>
       <p class="tour-caption">The Show Barn Main Hall</p>
-      <p style="margin-top:1.3rem;text-align:center;">
-        <a class="btn btn-outline-white" href="https://my.matterport.com/show/?m=qQ4EpXaxjGH" target="_blank" rel="noreferrer">Open Full Screen 3D Tour</a>
-      </p>
     </div>
   </section>
 
   <section class="gallery-band section-dark" id="gallery">
     <div class="section-shell">
-      <div class="gallery-head">
-        <p class="section-label center" style="margin-bottom:.65rem;">Wedding and event moments</p>
-        <h2 class="section-title center">A curated look at the venue in action</h2>
-      </div>
       <div class="gallery-grid" style="grid-template-columns:repeat(2,1fr);gap:.8rem;max-width:980px;margin:0 auto;">
-        <img src="../assets/space-clean/confetti.png" alt="Wedding celebration with confetti inside the venue">
-        <img src="../assets/space-clean/veil.png" alt="Wedding couple beneath the veil">
-        <img src="../assets/space-clean/dog-kiss.png" alt="Wedding couple with their dogs">
-        <img src="../assets/space-clean/party-arch.png" alt="Wedding couple walking through a celebration arch">
-        <img src="../assets/space-clean/road-couple.png" alt="Bride and groom walking down the road at the venue">
-        <img src="../assets/space-clean/sunset-couple.png" alt="Bride and groom smiling at sunset">
-        <img src="../assets/space-clean/ceremony.png" alt="Couple walking down the aisle at the ceremony">
-        <img src="../assets/space-clean/field-couple.png" alt="Bride and groom posing in the field with dogs">
+        <img src="../assets/space/The space page/1.png" alt="Bride, groom, and wedding party posing under a tree at The Show Barn">
+        <img src="../assets/space/The space page/2.png" alt="Bride and groom kissing on the dance floor as confetti falls">
+        <img src="../assets/space/The space page/3.png" alt="Bride and groom kissing in a field with their dogs">
+        <img src="../assets/space/The space page/4.png" alt="Bride and groom celebrating as they walk back down the aisle">
+        <img src="../assets/space/The space page/5.png" alt="Bride and groom laughing together on the drive at The Show Barn">
+        <img src="../assets/space/The space page/6.png" alt="Wedding party raising bouquets over the newlyweds">
+        <img src="../assets/space/The space page/7.png" alt="Bride wiping a tear during the ceremony at The Show Barn">
+        <img src="../assets/space/The space page/8.png" alt="Bride and groom sharing a quiet moment under the veil">
       </div>
       <div class="load-more-wrap">
-        <a href="/contact/#contact-form" class="btn btn-outline-white">Plan Your Event</a>
+        <a href="https://www.instagram.com/theshowbarnky/" target="_blank" rel="noreferrer" class="btn btn-outline-white">Load More &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner-overlay-band" id="contact-form">
+    <div class="banner-overlay-wrap">
+      <img src="../assets/space/The space page/9.png" alt="Bride and groom walking hand in hand back toward The Show Barn at sunset" class="banner-overlay-img tall">
+      <div class="banner-overlay-card cta-card">
+        <h2>CONTACT <em>Us</em></h2>
+        <p>
+          Our team is here to make the process of event planning simple, welcoming, and
+          stress-free. We're happy to answer your questions, walk you through the details, and
+          help you picture your day here.
+        </p>
+        <p>
+          Fill out the form below and we'll be in touch shortly to confirm availability, provide
+          package details, and guide you through next steps.
+        </p>
+
+        <form id="contactForm" class="contact-form">
+          <input type="hidden" name="to_email" value="booking@altusgp.com">
+          <input type="hidden" name="bcc_email" value="rajeswarigopu.eee@gmail.com">
+          <input type="hidden" name="subject" value="New Inquiry - The Show Barn Website">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                Full name *
+              </label>
+              <input type="text" id="fullName" name="from_name" required placeholder="Jane Smith">
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-4.5 7.79"/></svg>
+                Email address *
+              </label>
+              <input type="email" id="email" name="from_email" required placeholder="jane@email.com">
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="guests">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5"/><circle cx="17.5" cy="9" r="2.3"/><path d="M16.3 12.8c2.4.3 4.7 1.9 5.5 4.3"/></svg>
+                Number of Guests
+              </label>
+              <select id="guests" name="guests">
+                <option value="">Select a range</option>
+                <option value="Under 50">Under 50</option>
+                <option value="50-100">50 - 100</option>
+                <option value="100-150">100 - 150</option>
+                <option value="150-200">150 - 200</option>
+                <option value="200-300">200 - 300</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="vision">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                Share your vision *
+              </label>
+              <textarea id="vision" name="message" required placeholder="Tell us about your event date, vision, and any questions you have..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn btn-tan contact-submit">Plan Your Experience &rarr;</button>
+
+          <div class="form-success" id="formSuccess">
+            Thank you. Your message has been sent. We will be in touch shortly.
+          </div>
+          <div class="form-error" id="formError">
+            Something went wrong. Please try again, or email us directly at <a href="mailto:booking@altusgp.com">booking@altusgp.com</a>.
+          </div>
+        </form>
       </div>
     </div>
   </section>

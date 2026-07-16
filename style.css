@@ -1052,6 +1052,18 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   margin: 0 auto 1.2rem;
 }
 
+/* The Space page — gold cursive tour quote */
+.showbarn-page .space-tour-quote{
+  max-width: 46rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  line-height: 1.5;
+  color: var(--tan);
+}
+
 /* Weddings page — intro heading row */
 .showbarn-page .intro-heading-row{
   padding: 0 0 1rem;
