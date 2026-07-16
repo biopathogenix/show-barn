@@ -310,8 +310,13 @@ header.site-nav{
 .cabin-card-body{ padding:1.6rem; }
 .cabin-card-body p.desc{ font-size:.85rem; color:var(--muted); margin-bottom:.9rem; }
 .cabin-card-body ul{ margin-bottom:1.1rem; }
-.cabin-card-body li{ font-size:.82rem; color:var(--muted); padding-left:1.1rem; position:relative; margin-bottom:.4rem; }
-.cabin-card-body li::before{ content:'●'; color:var(--tan); font-size:.5rem; position:absolute; left:0; top:.45em; }
+.cabin-card-body li{ font-size:.82rem; color:var(--muted); padding-left:1.6rem; position:relative; margin-bottom:.5rem; }
+.cabin-card-body li::before{
+  content:'\2713'; color:#fff; font-size:.6rem; font-weight:700;
+  width:16px; height:16px; border-radius:50%; background:var(--tan-dark);
+  display:flex; align-items:center; justify-content:center;
+  position:absolute; left:0; top:.05em;
+}
 .cabin-card-body h3{ font-size:1.15rem; margin-bottom:.6rem; }
 @media(max-width:900px){ .cabin-grid{ grid-template-columns:1fr; } }
 
@@ -921,8 +926,53 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   color: #5a594f;
 }
 
+/* Accommodation page — centered cursive quote line between intro rows */
+.showbarn-page .cabin-quote{
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  line-height: 1.4;
+  color: #f5f1e6;
+  max-width: 46rem;
+  margin: 3rem auto;
+}
+
+/* Accommodation page — checkmark bullet list (Cabins Collection band) */
+.showbarn-page .check-list{
+  list-style: none;
+  margin: 0 0 1.6rem;
+  padding: 0;
+}
+
+.showbarn-page .check-list li{
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  font-size: .92rem;
+  line-height: 1.6;
+  margin-bottom: .7rem;
+}
+
+.showbarn-page .check-list li::before{
+  content: '\2713';
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--tan-dark);
+  color: #fff;
+  font-size: .65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .15em;
+}
+
 .showbarn-page .cabin-card-body li::before{
-  color: var(--tan-dark);
+  background: var(--tan-dark);
+  color: #fff;
 }
 
 .showbarn-page .banner-overlay-band{
