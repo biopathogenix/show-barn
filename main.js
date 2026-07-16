@@ -4,16 +4,21 @@
 
 // Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function () {
-  var toggle = document.querySelector('.nav-toggle');
-  var links = document.querySelector('.nav-links');
-  if (toggle && links) {
+  document.querySelectorAll('header.site-nav').forEach(function (nav) {
+    var toggle = nav.querySelector('.nav-toggle');
+    var links = nav.querySelector('.nav-links');
+    if (!toggle || !links) return;
+
     toggle.addEventListener('click', function () {
       links.classList.toggle('open');
     });
+
     links.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { links.classList.remove('open'); });
+      a.addEventListener('click', function () {
+        links.classList.remove('open');
+      });
     });
-  }
+  });
 
   // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(function (item) {
