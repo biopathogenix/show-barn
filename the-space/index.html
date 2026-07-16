@@ -7,8 +7,8 @@
 <meta name="description" content="Explore the space at The Show Barn with a Matterport tour, wedding gallery, and a contact card to start planning your event.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23465244'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' font-style='italic' fill='%23f5f1e6' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 </head>
 <body class="showbarn-page">
@@ -16,16 +16,20 @@
 
 <header class="site-nav showbarn-nav">
   <div class="nav-inner nav-inner-home">
-    <a href="/" class="nav-logo nav-logo-home">The Show Barn</a>
+    <a href="/show-barn/" class="nav-logo nav-logo-home">
+      <span class="nav-logo-text">
+        <span class="nav-logo-eyebrow">The</span>
+        <b>SHOW BARN</b>
+      </span>
+    </a>
     <nav class="nav-links showbarn-links">
-      <a href="/">Home</a>
-      <a href="/weddings/">Weddings</a>
-      <a href="/accommodation/">Accommodation</a>
-      <a href="/the-space/" class="active">The Space</a>
-      <a href="/contact/#contact-form">Contact</a>
+      <a href="/show-barn/accommodation/">Accommodation</a>
+      <a href="/show-barn/weddings/">Weddings</a>
+      <a href="/show-barn/the-space/" class="active">The Space</a>
+      <a href="/show-barn/contact/#contact-form">Contact</a>
     </nav>
     <div class="nav-cta-wrap">
-      <a href="/contact/#contact-form" class="btn btn-tan">Check Availability</a>
+      <a href="/show-barn/contact/#contact-form" class="btn btn-tan">Check Availability &rarr;</a>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -34,7 +38,7 @@
 <main>
   <section class="hero-shell">
     <div class="hero-frame">
-      <img class="hero-image" src="assets/space-clean/walkaway.png" alt="A couple walking toward The Show Barn at sunset">
+      <img class="hero-image" src="../assets/space-clean/walkaway.png" alt="A couple walking toward The Show Barn at sunset">
       <div class="hero-overlay">
         <div class="hero-copy">
           <p class="eyebrow">Explore The Show Barn</p>
@@ -92,17 +96,17 @@
         <h2 class="section-title center">A curated look at the venue in action</h2>
       </div>
       <div class="gallery-grid" style="grid-template-columns:repeat(2,1fr);gap:.8rem;max-width:980px;margin:0 auto;">
-        <img src="assets/space-clean/confetti.png" alt="Wedding celebration with confetti inside the venue">
-        <img src="assets/space-clean/veil.png" alt="Wedding couple beneath the veil">
-        <img src="assets/space-clean/dog-kiss.png" alt="Wedding couple with their dogs">
-        <img src="assets/space-clean/party-arch.png" alt="Wedding couple walking through a celebration arch">
-        <img src="assets/space-clean/road-couple.png" alt="Bride and groom walking down the road at the venue">
-        <img src="assets/space-clean/sunset-couple.png" alt="Bride and groom smiling at sunset">
-        <img src="assets/space-clean/ceremony.png" alt="Couple walking down the aisle at the ceremony">
-        <img src="assets/space-clean/field-couple.png" alt="Bride and groom posing in the field with dogs">
+        <img src="../assets/space-clean/confetti.png" alt="Wedding celebration with confetti inside the venue">
+        <img src="../assets/space-clean/veil.png" alt="Wedding couple beneath the veil">
+        <img src="../assets/space-clean/dog-kiss.png" alt="Wedding couple with their dogs">
+        <img src="../assets/space-clean/party-arch.png" alt="Wedding couple walking through a celebration arch">
+        <img src="../assets/space-clean/road-couple.png" alt="Bride and groom walking down the road at the venue">
+        <img src="../assets/space-clean/sunset-couple.png" alt="Bride and groom smiling at sunset">
+        <img src="../assets/space-clean/ceremony.png" alt="Couple walking down the aisle at the ceremony">
+        <img src="../assets/space-clean/field-couple.png" alt="Bride and groom posing in the field with dogs">
       </div>
       <div class="load-more-wrap">
-        <a href="/contact/#contact-form" class="btn btn-outline-white">Plan Your Event</a>
+        <a href="/show-barn/contact/#contact-form" class="btn btn-outline-white">Plan Your Event</a>
       </div>
     </div>
   </section>
@@ -110,6 +114,7 @@
   <footer class="showbarn-footer">
     <div class="section-shell footer-shell">
       <div class="footer-mark">
+        <span class="eyebrow">The</span>
         <strong>SHOW BARN</strong>
         <p>A spacious, climate-controlled barn designed for unforgettable celebrations.</p>
       </div>
@@ -141,6 +146,6 @@
   </footer>
 </main>
 
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </body>
 </html>
