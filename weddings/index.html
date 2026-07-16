@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Show Barn | Luxury Wedding and Event Venue</title>
-<meta name="description" content="The Show Barn is a luxury wedding and event venue in Harrodsburg, Kentucky, designed for memorable celebrations, retreats, and gatherings.">
+<title>Weddings | The Show Barn</title>
+<meta name="description" content="A Kentucky wedding venue designed for elegant ceremonies, receptions, and stress-free planning.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23465244'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' font-style='italic' fill='%23f5f1e6' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body class="showbarn-page">
 <div class="page-grid-lines" aria-hidden="true"></div>
@@ -24,7 +25,7 @@
     </a>
     <nav class="nav-links showbarn-links">
       <a href="/show-barn/accommodation/">Accommodation</a>
-      <a href="/show-barn/weddings/">Weddings</a>
+      <a href="/show-barn/weddings/" class="active">Weddings</a>
       <a href="/show-barn/the-space/">The Space</a>
       <a href="/show-barn/contact/#contact-form">Contact</a>
     </nav>
@@ -38,7 +39,7 @@
 <main>
   <section class="hero-shell">
     <div class="hero-frame">
-      <img class="hero-image" src="assets/home-clean/home-1.png" alt="Aerial view of The Show Barn venue and grounds">
+      <img class="hero-image" src="../assets/wedding-clean/hero.png" alt="Bride and groom on the lawn at The Show Barn">
       <div class="hero-overlay">
         <div class="hero-copy">
           <h1>The Show Barn is a 10,000+ sq. ft. Luxury Wedding and <em>Event Venue</em></h1>
@@ -66,7 +67,7 @@
       </div>
       <div class="intro-row intro-row-reverse">
         <div class="intro-row-image">
-          <img src="assets/wedding-clean/wedding-1.png" alt="Bride and groom laughing together under a tree at golden hour">
+          <img src="../assets/wedding-clean/wedding-1.png" alt="Bride and groom laughing together under a tree at golden hour">
         </div>
         <div class="intro-row-copy">
           <p>
@@ -78,7 +79,7 @@
       </div>
 
       <div class="stamp-row">
-        <img class="stamp-badge" src="assets/wedding-clean/center.png" alt="The Show Barn seal">
+        <img class="stamp-badge" src="../assets/wedding-clean/center.png" alt="The Show Barn seal">
       </div>
 
       <div class="intro-row">
@@ -91,7 +92,7 @@
           </p>
         </div>
         <div class="intro-row-image">
-          <img src="assets/wedding-clean/wedding-2.png" alt="Bride and groom embracing under a tree with The Show Barn behind them">
+          <img src="../assets/wedding-clean/wedding-2.png" alt="Bride and groom embracing under a tree with The Show Barn behind them">
         </div>
       </div>
     </div>
@@ -104,14 +105,14 @@
         Fulfilling your <em>Dreams</em> is our one and only priority, which is why we offer
         3 <em class="dreams-em-lg">Experience Plans</em> to <em>Suit</em> your needs
       </h2>
-      <img class="dreams-photo" src="assets/wedding-clean/wedding-3.png" alt="Bride in a flowing gown overlooking the Kentucky hills">
+      <img class="dreams-photo" src="../assets/wedding-clean/wedding-3.png" alt="Bride in a flowing gown overlooking the Kentucky hills">
     </div>
   </section>
 
-  <section class="dark-plans">
+  <section class="dark-plans" id="plans">
     <div class="section-shell">
       <div class="plan-row plan-row-reverse">
-        <img src="assets/wedding-clean/wedding-4.png" alt="Bride and groom sharing a first dance inside The Show Barn">
+        <img src="../assets/wedding-clean/wedding-4.png" alt="Bride and groom sharing a first dance inside The Show Barn">
         <div class="plan-copy">
           <p class="eyebrow">01. Leave it to us</p>
           <h3>Full Wedding <em>Planning</em></h3>
@@ -136,7 +137,7 @@
       </div>
 
       <div class="plan-row">
-        <img src="assets/wedding-clean/wedding-5.png" alt="Bride and groom walking in front of a white barn at golden hour">
+        <img src="../assets/wedding-clean/wedding-5.png" alt="Bride and groom walking in front of a white barn at golden hour">
         <div class="plan-copy">
           <p class="eyebrow">02. Let's Work on it Together</p>
           <h3>Partial <em>Planning</em></h3>
@@ -159,7 +160,7 @@
       </div>
 
       <div class="plan-row plan-row-reverse">
-        <img src="assets/wedding-clean/wedding-6.png" alt="Guests gathered under the pavilion for a corporate event at The Show Barn">
+        <img src="../assets/wedding-clean/wedding-6.png" alt="Guests gathered under the pavilion for a corporate event at The Show Barn">
         <div class="plan-copy">
           <p class="eyebrow">03. Beyond Weddings</p>
           <h3>Custom And <em>Corporate Events</em></h3>
@@ -184,133 +185,84 @@
     </div>
   </section>
 
-  <section class="tour-band" id="tour">
-    <div class="section-shell">
-      <p class="tour-intro">
-        Step inside and explore our wedding and event venue from anywhere! This interactive 3D tour
-        lets you walk through the space at your own pace &mdash; just click to move around, zoom in to
-        see details, and switch floors or rooms with the menu.
-      </p>
-      <div class="tour-card">
-        <div class="tour-embed">
-          <iframe src="https://my.matterport.com/show/?m=mweATdD8G1L" allow="autoplay; fullscreen; web-share; xr-spatial-tracking" allowfullscreen title="The Show Barn 3D Virtual Tour"></iframe>
-        </div>
-      </div>
-      <p class="tour-caption">The Show Barn Main Hall</p>
-    </div>
-  </section>
-
-  <section class="cream-band">
-    <div class="section-shell feature-cream">
-      <div class="feature-cream-copy">
-        <p class="eyebrow dark">Weddings at the Show Barn</p>
-        <h2>Unforgettable Kentucky Weddings in the heart of <em>the Bluegrass</em></h2>
-        <p>
-          Say &ldquo;I do&rdquo; in a setting that feels both timeless and elegant. The Show Barn
-          offers the perfect balance of rustic charm and modern luxury, with a climate-controlled
-          interior that keeps your guests comfortable in every season.
-        </p>
-        <p>
-          From intimate ceremonies to grand receptions, our expansive barn and sweeping countryside
-          views create a backdrop that is as breathtaking as your day deserves to be.
-        </p>
-        <a class="btn btn-forest" href="/show-barn/weddings/">Plan Your Day</a>
-      </div>
-      <div class="feature-cream-image">
-        <img src="assets/home-clean/home-4.png" alt="The Show Barn exterior on a clear day">
-      </div>
-    </div>
-  </section>
-
-  <section class="dark-plans">
-    <div class="section-shell">
-      <div class="plan-row">
-        <img src="assets/home-clean/home-5.png" alt="Bride and groom walking toward The Show Barn cabins at golden hour">
-        <div class="plan-copy">
-          <p class="eyebrow">Enjoy Modern, on-site Accommodations</p>
-          <h3>Boutique Cabins and Modern Lodges Just a <em>Moment Away</em></h3>
-          <p>
-            When the party winds down, your guests aren't rushing to hotels &mdash; they're walking a
-            few steps to cozy cabins under the Kentucky stars. Perfect for bridal parties, family, and
-            out-of-town guests, our accommodations combine rustic comfort with boutique finishes.
-          </p>
-          <p>
-            Staying on-site means less travel, more connection, and the chance to soak in the
-            tranquility of the Bluegrass long after the celebration ends.
-          </p>
-          <a class="btn btn-outline-white" href="/show-barn/accommodation/">Explore + Book &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="banner-overlay-band">
+  <section class="banner-overlay-band" id="contact-form">
     <div class="banner-overlay-wrap">
-      <img src="assets/home-clean/home-6.png" alt="Wedding party celebration at The Show Barn" class="banner-overlay-img">
-      <div class="banner-overlay-card">
-        <p class="eyebrow dark">Events and Celebrations</p>
-        <h2>RETREATS, REUNIONS AND <em>Gatherings of all Kinds.</em></h2>
+      <img src="../assets/wedding-clean/wedding-7.png" alt="Bride and groom embracing at The Show Barn" class="banner-overlay-img tall">
+      <div class="banner-overlay-card cta-card">
+        <h2>LET'S START<br>PLANNING YOUR<br><em>Unforgettable Celebrating</em></h2>
         <p>
-          Beyond weddings, The Show Barn is an exceptional destination for retreats and group
-          getaways. Companies, families, and organizations find inspiration here &mdash; whether
-          gathered around outdoor activities, or unwinding by the fire. With the Bourbon Trail and
-          Kentucky's scenic attractions nearby, your retreat blends productivity, relaxation, and
-          memorable shared experiences.
+          Whether you're planning a Kentucky barn wedding, a reception, or a corporate retreat in the
+          Bluegrass, our team is here to answer your questions, walk you through the details, and
+          help you picture your day here.
         </p>
         <p>
           We make the process simple, welcoming, and stress-free so you can focus on what truly
           matters: celebrating with the people you care about the most.
         </p>
-        <a class="btn btn-forest" href="/show-barn/contact/#contact-form">Design Your Experience &rarr;</a>
-      </div>
-    </div>
-  </section>
+        <p>
+          Fill out the form below and we'll be in touch shortly to confirm availability, provide
+          package details, and guide you through next steps.
+        </p>
 
-  <section class="gallery-strip-band">
-    <div class="gallery-strip">
-      <img src="assets/home-clean/home-7.png" alt="Couple celebrating at The Show Barn">
-      <img src="assets/home-clean/home-8.png" alt="Bride and groom greeted by guests at The Show Barn">
-      <img src="assets/home-clean/home-9.png" alt="Newlyweds laughing together at The Show Barn">
-      <img src="assets/home-clean/home-10.png" alt="Bride and groom embracing at sunset at The Show Barn">
-      <img src="assets/home-clean/home-11.png" alt="Wedding celebration at The Show Barn">
-    </div>
-  </section>
+        <form id="contactForm" class="contact-form">
+          <input type="hidden" name="to_email" value="booking@altusgp.com">
+          <input type="hidden" name="bcc_email" value="rajeswarigopu.eee@gmail.com">
+          <input type="hidden" name="subject" value="New Wedding Inquiry - The Show Barn Website">
 
-  <section class="faq-band">
-    <div class="section-shell faq-shell-center">
-      <p class="tour-intro">Wondering if The Show Barn is right for your next event?</p>
-      <h2 class="faq-caps-title">Here Are a Few Questions That Couples and Planners Ask Us the Most</h2>
-      <div class="faq faq-center">
-        <div class="faq-item open">
-          <button class="faq-q"><span>I've never planned a wedding before &mdash; how will I know what to do?</span><span class="icon">&#8964;</span></button>
-          <div class="faq-a"><p>
-            That's okay &mdash; you're not expected to be an expert! We provide the space, comfort,
-            and flexibility so you can design your wedding in a way that feels true to you. Looking
-            for a full-service option? Our full-service wedding planning with Stephanie Weir takes
-            the stress out of your big day by handling every detail from start to finish. Stephanie
-            will guide you through venue selection, vendor booking, design planning, timelines, and
-            day-of coordination &mdash; ensuring a seamless and memorable experience. Full planning
-            packages typically cover 12&ndash;18 months of support, with pricing customized to your
-            event size and vision. Booking is simple: schedule a consultation to discuss your needs,
-            receive a personalized proposal, and reserve your date with a deposit.
-          </p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q"><span>What if I want an outdoor ceremony but the weather doesn't cooperate?</span><span class="icon">&#8964;</span></button>
-          <div class="faq-a"><p>
-            No problem at all. The Main Hall and covered pavilion give you a spacious,
-            climate-controlled backup so your ceremony can move indoors in minutes without losing the
-            atmosphere you planned for.
-          </p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q"><span>What makes The Show Barn different from other venues?</span><span class="icon">&#8964;</span></button>
-          <div class="faq-a"><p>
-            Between the climate-controlled 10,000+ sq. ft. barn, boutique cabins just steps away, and
-            a location minutes from Lexington, Keeneland, and the Bourbon Trail, your guests get a
-            true Bluegrass weekend &mdash; not just a single-day event.
-          </p></div>
-        </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                Full name *
+              </label>
+              <input type="text" id="fullName" name="from_name" required placeholder="Jane Smith">
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-4.5 7.79"/></svg>
+                Email address *
+              </label>
+              <input type="email" id="email" name="from_email" required placeholder="jane@email.com">
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="guests">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5"/><circle cx="17.5" cy="9" r="2.3"/><path d="M16.3 12.8c2.4.3 4.7 1.9 5.5 4.3"/></svg>
+                Number of Guests
+              </label>
+              <select id="guests" name="guests">
+                <option value="">Select a range</option>
+                <option value="Under 50">Under 50</option>
+                <option value="50-100">50 - 100</option>
+                <option value="100-150">100 - 150</option>
+                <option value="150-200">150 - 200</option>
+                <option value="200-300">200 - 300</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="vision">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                Share your vision *
+              </label>
+              <textarea id="vision" name="message" required placeholder="Tell us about your event date, vision, and any questions you have..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn btn-tan contact-submit">Plan Your Experience &rarr;</button>
+
+          <div class="form-success" id="formSuccess">
+            Thank you. Your message has been sent. We will be in touch shortly.
+          </div>
+          <div class="form-error" id="formError">
+            Something went wrong. Please try again, or email us directly at <a href="mailto:booking@altusgp.com">booking@altusgp.com</a>.
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -351,6 +303,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </body>
 </html>
