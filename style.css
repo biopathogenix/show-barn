@@ -730,10 +730,15 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .intro-row-reverse .intro-row-image{
   order: 1;
+  align-self: end;
 }
 
 .showbarn-page .intro-row-reverse .intro-row-copy{
   order: 2;
+}
+
+.showbarn-page .intro-row:not(.intro-row-reverse) .intro-row-image{
+  align-self: start;
 }
 
 .showbarn-page .intro-row-copy p{
@@ -1098,8 +1103,8 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 }
 
 .showbarn-page .stamp-badge{
-  width: 148px;
-  height: 148px;
+  width: 172px;
+  height: 172px;
   object-fit: cover;
   border-radius: 50%;
   filter: drop-shadow(0 16px 32px rgba(0,0,0,.4));
