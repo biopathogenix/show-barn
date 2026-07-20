@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
    -----------------------------------------------------------
    1. Create a free account at https://www.emailjs.com
    2. Add an Email Service (e.g. Gmail) connected to booking@altusgp.com
-   3. Create a Template with fields: from_name, from_email, guests, message
+   3. Create a Template with fields: from_name, from_email, phone, guests, message
       - Set "To Email"  = booking@altusgp.com
       - Set "Bcc"       = rajeswarigopu.eee@gmail.com
    4. Replace the 3 placeholder values below with your own IDs/keys
