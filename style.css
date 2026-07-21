@@ -633,7 +633,9 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 2.5rem 4rem;
+  --shell-inset: calc((100vw - min(1500px, calc(100vw - 3rem))) / 2);
+  --frame-inset: calc((100vw - min(1840px, calc(100vw - 2rem))) / 2);
+  padding: 2.5rem 4rem 2.5rem max(2rem, calc(var(--shell-inset) - var(--frame-inset)));
 }
 
 .showbarn-page .hero-copy{
