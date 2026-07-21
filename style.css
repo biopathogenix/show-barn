@@ -188,22 +188,14 @@ header.site-nav{
 .knot-badge{
   position:absolute; z-index:3; right:6%; top:20%;
   width:118px; height:118px;
-  background:var(--cream);
-  border-radius:50%;
   display:flex; align-items:center; justify-content:center;
-  text-align:center;
   transform:rotate(-8deg);
-  box-shadow:var(--shadow);
 }
-.knot-badge::before{
-  content:''; position:absolute; inset:-8px;
-  background:var(--cream);
-  clip-path:polygon(50% 0%,61% 12%,78% 6%,80% 24%,97% 28%,89% 44%,100% 58%,84% 65%,88% 83%,70% 79%,63% 96%,50% 84%,37% 96%,30% 79%,12% 83%,16% 65%,0% 58%,11% 44%,3% 24%,20% 6%,39% 12%);
-  z-index:-1;
+.knot-badge img{
+  width:100%; height:100%; object-fit:contain;
+  filter:drop-shadow(0 6px 14px rgba(0,0,0,.28));
 }
-.knot-badge span{ font-size:.56rem; letter-spacing:.06em; color:var(--muted); line-height:1.3; }
-.knot-badge strong{ display:block; font-family:'Playfair Display',serif; font-size:.95rem; font-style:italic; color:var(--forest); }
-@media(max-width:700px){ .knot-badge{ width:88px; height:88px; right:4%; top:12%; } .knot-badge strong{ font-size:.72rem; } .knot-badge span{ font-size:.46rem; } }
+@media(max-width:700px){ .knot-badge{ width:88px; height:88px; right:4%; top:12%; } }
 
 /* ---------- Sections ---------- */
 .section{ padding:5.5rem 0; }
@@ -697,18 +689,6 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   height: 138px;
   align-self: flex-end;
   margin-bottom: 3rem;
-  background: #f5ead5;
-  color: #364036;
-}
-
-.showbarn-page .knot-badge span{
-  color: #6b6250;
-  font-size: .58rem;
-}
-
-.showbarn-page .knot-badge strong{
-  color: #364036;
-  font-size: 1rem;
 }
 
 .showbarn-page .intro-rows-band{

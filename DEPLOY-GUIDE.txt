@@ -70,8 +70,8 @@ submissions actually send.
       Bcc:         rajeswarigopu.eee@gmail.com
       Reply To:    {{from_email}}
       Subject:     {{subject}}
-      Body:        include {{from_name}}, {{from_email}}, {{guests}},
-                    {{message}}
+      Body:        include {{from_name}}, {{from_email}}, {{phone}},
+                    {{guests}}, {{message}}
 4. Copy your Public Key (Account → General), Service ID, and Template ID.
 5. Open main.js and replace these 3 lines near the top:
       var EMAILJS_PUBLIC_KEY  = 'YOUR_EMAILJS_PUBLIC_KEY';
