@@ -736,7 +736,7 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .intro-row-image img{
   width: 100%;
-  height: 420px;
+  height: 520px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 30px 60px rgba(0,0,0,.3), 0 10px 24px rgba(0,0,0,.2);
@@ -882,7 +882,7 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
 .showbarn-page .plan-row img{
   width: 100%;
-  height: 340px;
+  height: 520px;
   object-fit: cover;
 }
 
