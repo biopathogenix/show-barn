@@ -626,6 +626,28 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   filter: brightness(.78);
 }
 
+.showbarn-page .hero-slideshow{
+  width: 100%;
+  height: 720px;
+  position: relative;
+  overflow: hidden;
+  filter: brightness(.78);
+}
+
+.showbarn-page .hero-slide{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.showbarn-page .hero-slide.is-active{
+  opacity: 1;
+}
+
 .showbarn-page .hero-overlay{
   position: absolute;
   inset: 0;
@@ -1363,7 +1385,8 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
     width: 58%;
   }
 
-  .showbarn-page .hero-image{
+  .showbarn-page .hero-image,
+  .showbarn-page .hero-slideshow{
     height: 680px;
   }
 
@@ -1414,7 +1437,8 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
     padding: 1.2rem 1rem 1.8rem;
   }
 
-  .showbarn-page .hero-image{
+  .showbarn-page .hero-image,
+  .showbarn-page .hero-slideshow{
     height: 520px;
   }
 
