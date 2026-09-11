@@ -1165,58 +1165,95 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 }
 
 /* Weddings page — "Fulfilling your dreams" stacked heading with overlapping photo */
+@font-face{
+  font-family: 'Dreams Serif';
+  src: url('assets/fonts/cormorant-garamond-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Dreams Script';
+  src: url('assets/fonts/parisienne-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 .showbarn-page .dreams-band{
-  background: #f3ebdd;
-  padding: 6rem 0 5rem;
+  background: #f3efdf;
+  padding: clamp(2rem, 3.3vw, 3.1rem) 0 clamp(2rem, 3.8vw, 3.6rem);
   position: relative;
   overflow: hidden;
 }
 
 .showbarn-page .dreams-shell{
   position: relative;
-  width: min(720px, calc(100% - 2rem));
+  width: min(1100px, calc(100% - 2rem));
+  container-type: inline-size;
   margin: 0 auto;
   text-align: center;
 }
 
 .showbarn-page .dreams-eyebrow{
   text-align: center;
-  color: #7a7158;
+  color: #969789;
+  font-size: clamp(.6rem, 1vw, .9rem);
+  font-weight: 600;
+  margin-bottom: 1.6em;
 }
 
 .showbarn-page .dreams-heading{
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  letter-spacing: .01em;
+  font-family: 'Dreams Serif', 'Cormorant Garamond', serif;
+  font-weight: 400;
+  letter-spacing: -.025em;
   text-transform: uppercase;
-  font-size: clamp(2.3rem, 4.6vw, 4rem);
-  line-height: 1.22;
-  color: #343c31;
+  font-size: clamp(1.5rem, 8.5vw, 5.75rem);
+  font-size: 8.4cqi;
+  line-height: 1.28;
+  color: #343f34;
   margin: 0;
 }
 
 .showbarn-page .dreams-heading em{
-  font-family: 'Parisienne', cursive;
+  font-family: 'Dreams Script', 'Parisienne', cursive;
   font-style: normal;
   font-weight: 400;
   text-transform: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  line-height: .8;
+}
+
+.showbarn-page .dreams-line{
+  display: block;
+  white-space: nowrap;
+}
+
+.showbarn-page .dreams-offer{
+  font-size: .75em;
+  line-height: 1.55;
+}
+
+.showbarn-page .dreams-last{
+  margin-top: .25em;
 }
 
 .showbarn-page .dreams-heading em.dreams-em-lg{
-  font-size: 1.5em;
+  font-size: 1.52em;
   display: inline-block;
   line-height: 1;
 }
 
 .showbarn-page .dreams-photo{
   position: absolute;
-  top: 41%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(300px, 60%);
-  border-radius: 4px;
-  box-shadow: 0 24px 44px rgba(0,0,0,.4);
+  top: calc(1rem + 10cqi);
+  left: 29.5%;
+  width: 62%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(-8px 16px 16px rgba(46, 48, 36, .27));
+  pointer-events: none;
   z-index: 2;
 }
 
@@ -1582,7 +1619,12 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   }
 
   .showbarn-page .dreams-band{
-    padding: 3rem 0 2.5rem;
+    padding: 2rem 0 2.5rem;
+  }
+
+  .showbarn-page .dreams-photo{
+    top: calc(1.3rem + 10cqi);
+    filter: drop-shadow(-3px 7px 8px rgba(46, 48, 36, .24));
   }
 
   .showbarn-page .banner-overlay-img.tall{
