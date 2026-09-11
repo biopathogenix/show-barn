@@ -120,6 +120,7 @@ header.site-nav{
 .nav-logo-text b{ font-size:1.25rem; letter-spacing:.16em; font-weight:600; }
 .nav-logo-text span{ font-size:.55rem; letter-spacing:.28em; color:rgba(255,255,255,.55); text-transform:uppercase; }
 .nav-logo-eyebrow{ font-size:.6rem; letter-spacing:.32em; color:var(--tan); font-style:italic; }
+.nav-logo-img{ height:46px; width:auto; display:block; }
 
 .nav-links{ display:flex; align-items:center; gap:2.1rem; }
 .nav-links a{
@@ -700,12 +701,38 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   max-width: 38ch;
 }
 
+.showbarn-page .hero-shell.home-hero .hero-copy{
+  width: min(620px, 52%);
+}
+
+.showbarn-page .hero-shell.home-hero .hero-copy h1{
+  max-width: none;
+}
+
+.showbarn-page .hero-shell.space-hero .hero-copy{
+  width: min(600px, 50%);
+}
+
+.showbarn-page .hero-shell.space-hero .hero-copy h1{
+  max-width: none;
+}
+
+.showbarn-page .hero-shell.accommodation-hero .hero-copy{
+  width: min(600px, 50%);
+}
+
+.showbarn-page .hero-shell.accommodation-hero .hero-copy h1{
+  max-width: none;
+}
+
 .showbarn-page .hero-text{
   max-width: 28rem;
   font-size: .9rem;
   line-height: 1.6;
   color: rgba(245,241,230,.84);
   margin: 0 0 1.4rem;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .showbarn-page .hero-actions{
@@ -1055,6 +1082,7 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 .showbarn-page .hero-copy h1 em{
   font-size: 1.2em;
   white-space: nowrap;
+  margin-left: .12em;
 }
 
 .showbarn-page .feature-cream-copy h2 em,
@@ -1340,6 +1368,12 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
   line-height: .9;
 }
 
+.showbarn-page .footer-mark img{
+  height: 84px;
+  width: auto;
+  margin: 0 auto;
+}
+
 .showbarn-page .footer-mark p{
   color: rgba(245,241,230,.7);
   margin-top: .8rem;
@@ -1400,6 +1434,12 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
   .showbarn-page .hero-shell.wedding-hero .hero-copy h1{
     font-size: clamp(1.7rem, 3.6vw, 2.3rem);
+  }
+
+  .showbarn-page .hero-shell.home-hero .hero-copy,
+  .showbarn-page .hero-shell.space-hero .hero-copy,
+  .showbarn-page .hero-shell.accommodation-hero .hero-copy{
+    width: 58%;
   }
 
   .showbarn-page .hero-image,
@@ -1470,6 +1510,12 @@ footer{ background:var(--forest-deep); color:rgba(255,255,255,.75); padding:4.5r
 
   .showbarn-page .hero-shell.wedding-hero .hero-copy h1{
     font-size: clamp(1.6rem, 6vw, 2rem);
+  }
+
+  .showbarn-page .hero-shell.home-hero .hero-copy,
+  .showbarn-page .hero-shell.space-hero .hero-copy,
+  .showbarn-page .hero-shell.accommodation-hero .hero-copy{
+    width: 100%;
   }
 
   .showbarn-page .knot-badge{
